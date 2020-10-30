@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="com.matimoro.tennis.scores" version="1.0.1">
+    <author>matimoro</author>
+    <profile name="wearable"/>
+    <ui-application appid="com.matimoro.tennis.scores" exec="tennis-scores" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>Tennis Scores</label>
+        <icon>launcher.png</icon>
+        <splash-screens>
+            <splash-screen indicator-display="false" orientation="portrait" src="splash-screen.png" type="img"/>
+        </splash-screens>
+    </ui-application>
+</manifest>

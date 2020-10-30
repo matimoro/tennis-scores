@@ -1,0 +1,111 @@
+collections {
+   group { "main";
+      images {
+         image: "score_text_bg.png" COMP;
+         image: "my_score_button_bg.png" COMP;
+         image: "my_score_button.png" COMP;
+      }
+      parts {
+         part { name: "win.bg";
+            type: RECT;
+            description { state: "default" 0.0;
+               rel1 { relative: 0.0 0.0; }
+               rel2 { relative: 1.0 1.0; }
+               color: 36 36 36 255;
+            }
+         }
+         part { name: "my_points_label";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 60/360 80/360; to: "win.bg"; }
+               rel2 { relative: 120/360 140/360; to: "win.bg"; }
+            }
+         }
+         rect { "my_score_button.bg";
+            scale: 1;
+            desc { "default";
+               color: 0 136 170 255;
+               visible: 0;
+               align: 0.5 0.5;
+               rel1.relative: 0.00 0.00;
+               rel2.relative: 0.50 0.50;
+            }
+         }
+         part { name: "my_score_button";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { to: "my_score_button.bg"; }
+               rel2 { to: "my_score_button.bg"; }
+               fixed: 1 1;
+            }
+         }
+         part { name: "op_points_label";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 240/360 80/360; to: "win.bg"; }
+               rel2 { relative: 300/360 140/360; to: "win.bg"; }
+            }
+         }
+         rect { "op_score_button.bg";
+            scale: 1;
+            desc { "default";
+               color: 0 136 170 255;
+               visible: 0;
+               align: 0.5 0.5;
+               rel1.relative: 0.50 0.00;
+               rel2.relative: 1.00 0.50;
+            }
+         }
+         part { name: "op_score_button";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { to: "op_score_button.bg"; }
+               rel2 { to: "op_score_button.bg"; }
+               fixed: 1 1;
+            }
+         }
+         part { name: "my_scores_label_1";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 120/360 240/360; to: "win.bg"; }
+               rel2 { relative: 160/360 280/360; to: "win.bg"; }
+            }
+         }
+         part { name: "my_scores_label_2";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 160/360 240/360; to: "win.bg"; }
+               rel2 { relative: 200/360 280/360; to: "win.bg"; }
+            }
+         }
+         part { name: "my_scores_label_3";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 200/360 240/360; to: "win.bg"; }
+               rel2 { relative: 240/360 280/360; to: "win.bg"; }
+            }
+         }
+         part { name: "op_scores_label_1";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 120/360 280/360; to: "win.bg"; }
+               rel2 { relative: 160/360 320/360; to: "win.bg"; }
+            }
+         }
+         part { name: "op_scores_label_2";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 160/360 280/360; to: "win.bg"; }
+               rel2 { relative: 200/360 320/360; to: "win.bg"; }
+            }
+         }
+         part { name: "op_scores_label_3";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+               rel1 { relative: 200/360 280/360; to: "win.bg"; }
+               rel2 { relative: 240/360 320/360; to: "win.bg"; }
+            }
+         }
+      }
+   }
+}

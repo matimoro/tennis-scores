@@ -1,0 +1,7 @@
+/.sign
+.cproject
+.exportMap
+.project
+.tproject
+Debug/
+res/edje/main.edj
